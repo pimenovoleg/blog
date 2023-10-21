@@ -1,6 +1,6 @@
 import { Children } from 'react';
 
-export function withHeadingId(children) {
+export function withHeadingId(children: any) {
     return Children.map(children, (el) => {
         if ('string' === typeof el) {
             const re = /\[#([^\]]+)\]\s*$/m;
@@ -28,6 +28,7 @@ export function withHeadingId(children) {
                             #
                         </a>
 
+                        {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/anchor-is-valid */}
                         <a
                             id={match[1]}
                             className={`

@@ -51,6 +51,7 @@ function Views({ id, mutate, defaultValue }) {
                 .then((obj) => {
                     mutate(obj);
                 })
+                // eslint-disable-next-line no-console
                 .catch(console.error);
             didLogViewRef.current = true;
         }

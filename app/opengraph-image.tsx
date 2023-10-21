@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import { ImageResponse } from 'next/server';
 
 import { getPosts } from '@/app/getPosts';
