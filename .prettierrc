@@ -1,0 +1,42 @@
+{
+    "$schema": "https://json.schemastore.org/prettierrc.json",
+    "singleQuote": true,
+    "printWidth": 100,
+    "useTabs": false,
+    "tabWidth": 4,
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "endOfLine": "lf",
+    "importOrder": [
+        "^(react/(.*)$)|^(react$)",
+        "^(next/(.*)$)|^(next$)",
+        "",
+        "<TYPES>",
+        "<TYPES>^[.]",
+        "",
+        "<THIRD_PARTY_MODULES>",
+        "",
+        "^(@koobiq-react/(.*)$)|^(@koobiq-react$)",
+        "",
+        "^types$",
+        "^@/env(.*)$",
+        "^@/types/(.*)$",
+        "^@/config/(.*)$",
+        "^@/lib/(.*)$",
+        "^@/hooks/(.*)$",
+        "^@/components/ui/(.*)$",
+        "^@/components/(.*)$",
+        "^@/styles/(.*)$",
+        "^@/app/(.*)$",
+        "",
+        "^[./]"
+    ],
+    "importOrderParserPlugins": [
+        "typescript",
+        "jsx",
+        "decorators-legacy"
+    ],
+    "plugins": [
+        "@ianvs/prettier-plugin-sort-imports"
+    ]
+}
