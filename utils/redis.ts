@@ -5,7 +5,7 @@ if (!process.env.UPSTASH_REDIS_REST_TOKEN) {
 }
 
 const redis = new Redis({
-    url: 'https://grown-mutt-34286.upstash.io',
+    url: process.env.UPSTASH_REDIS_REST_URL as string,
     token: process.env.UPSTASH_REDIS_REST_TOKEN
 });
 
